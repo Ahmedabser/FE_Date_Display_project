@@ -30,7 +30,11 @@ article{
     /*border-radius: 0.8em;
     border: 1px solid #ccc;*/
     min-height: 300px;
-     
+    display: flex;
+    flex-direction: column;   /* جعل العناصر في ترتيب عمودي */
+    justify-content: center;  /* لتوسيط العناصر داخليًا عموديًا */
+    align-items: center;      /* لتوسيط العناصر داخليًا أفقيًا */
+  
 }
 h1{
     text-align: center;
@@ -77,11 +81,64 @@ h1{
     transition: all 0.3s ease;
 } */
 
-#dateOutput{
+.output {
+    width: 150px;
+    height: 10px;
     margin-top: 1em;
     padding: 1em;
-    background-color: #f4f4f4;
+    background-color: #3dd6a3;
     border-radius: 5px;
     text-align: center;
     color: #333;
+}
+
+#dateOutput {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: none; /* خلي الخلفية واضحة */
+    border-radius: 5px;
+    text-align: center;
+    color: #333;
+}
+
+
+.attribution{
+    font-size: 17px;
+    text-align: center;
+    margin: 10px;
+}
+.attribution a{
+    color: #f3ad17;
+}
+
+
+@media (max-width:540px) {
+
+    body {
+        margin: 0 auto;
+        
+    }
+
+    article {
+        margin-top: 0;
+    }
+
+    h1 {
+        margin-top: 2rem;
+    }
+
+    .container {
+        padding : 0;
+        margin: 0 ;
+        border-radius: none;
+    }
+
+    .container .container-img {
+        padding : 0;
+        border-radius: 0;
+    }
+
+    .container .container-img img {
+        border-radius: 0;
+    }
 }
