@@ -1,10 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
+
+
 body{
-    background-color: rgb(16 26 49);
+    background-color: rgb(16, 26, 48);
     color: white;
     font-family: 'Roboto' , sans-serif;
     margin: 0 auto;
     min-height: 100vh;
     display: grid;
+    overflow-x: hidden;
+    /* place-items: center; */
 }
 
 article{
@@ -15,7 +20,8 @@ article{
 }
 
 .containar-main{
-    background-color: whitesmoke;
+    background: radial-gradient(ellipse at right top, #107667ed 20%, #372483 47%, #0a1d64 70%);
+    /* background-color: whitesmoke; */
     border-radius: 20px;
     padding: 30px;
     margin: 0 auto;
@@ -38,7 +44,7 @@ article{
 }
 h1{
     text-align: center;
-    color: rgb(16 26 49);
+    color: rgb(230, 233, 240);
 }
 .data input{
     width: 300px;
@@ -143,3 +149,7 @@ h1{
         border-radius: 0;
     }
 }
+
+
+
+
