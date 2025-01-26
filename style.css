@@ -93,12 +93,13 @@ h1{
 }
 
 #dateOutput {
+    font-weight: bold;
     margin-top: 1em;
     padding: 1em;
     background-color: none; /* خلي الخلفية واضحة */
     border-radius: 5px;
     text-align: center;
-    color: #333;
+    color: #1405e7;
 }
 
 
