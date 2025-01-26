@@ -76,3 +76,12 @@ h1{
     cursor: pointer;
     transition: all 0.3s ease;
 } */
+
+#dateOutput{
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+    color: #333;
+}

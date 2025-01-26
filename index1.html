@@ -1,48 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Date Display</title>
-
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
- <!-- Link to external JavaScript file -->
- <script src="script.js"></script>
+
     <article>
         <main class="containar-main">
             <div id="container">
                 <h1>Date Display</h1>
                 <div class="data">
                     <input type="text" id="date" placeholder="Enter Date">
-                     <button id="addTaske" role="button" onclick="displayDate()">Display Date</button>
+                    <button id="addTask" role="button" onclick="displayDay()">Display Day</button>
                 </div>
-
-                <!-- <button id="addTaske" role="button" onclick="displayDate()">Display Date</button> -->
-                <option value="dateOutput1">Section 1</option>
-            
-                <div id="container1">
-                    <p id="dateOutput1"></p>
-                </div>
-
-<!-- 
-                <div class="display">
-                    <ul class="list" id="listId">
-                        <li id="day">Date</li>
-                    </ul>
-                </div> -->
+                <p id="dateOutput"></p>
             </div>
         </main>
     </article>
-    <footer>
-        <p>&copy; 2020 <a href="
-    </footer>
 
-   
+    <script src="script.js"></script>
+
 </body>
 </html>

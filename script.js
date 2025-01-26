@@ -1,13 +1,39 @@
 // script.js
+function displayDay() {
 
-function displayDate() {
-    // Get the current date
-    const currentDate = new Date();
-    const formattedDate = currentDate.toLocaleDateString();
 
-    // Get the selected target element from the dropdown
-    const selectedSection = document.getElementById('targetSection').value;
+    var date = document.getElementById("date").value;
 
-    // Display the date in the selected section
-    document.getElementById(selectedSection).innerHTML = "Current Date: " + formattedDate;
-}
+    let day=" ";
+
+
+    if (date==" "){
+        day= "invalid input";
+    }
+    else if (date==1){
+        day="الأحد";
+    }else if(date==2){
+        day="الإثنين";
+    }else if(date==3){
+        day="الثلاثاء";
+    }else if(date==4){
+        day="الأربعاء";
+    }else if(date==5){
+        day="الخميس";
+    }else if(date==6){
+        day="الجمعة";}
+    else if(date==7){
+        day="السبت";
+    }
+    else{
+        day= "invalid input";
+    }
+    // عرض اليوم في العنصر #dateOutput
+    document.getElementById("dateOutput").innerHTML = day;
+  }
+  
+document.getElementById("date").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        displayDay();
+    }
+});
